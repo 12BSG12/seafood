@@ -105,7 +105,8 @@
         transform: translateY(-100px);
         color: $white;
         background-color: rgba($white, .5);
-        &:active{
+        transition: all .3s ease;
+        &:hover{
             color: $blue;
             background-color: $white;
         }
@@ -116,12 +117,18 @@
             transform: none;
             position: absolute;
             bottom: -10px;
-            right: 377px;
+            right: 209px;
             margin: 0;
         }
         @media (max-width: 860px) {
-            text-align: center;
+            bottom: -20px;
+            right: 70%;
             left: 0;
+            text-align: center;
+        }
+        @media (max-width: 560px) {
+            bottom: -10px;
+            margin-right: 60px;
         }
     }
 }

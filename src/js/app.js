@@ -37,4 +37,22 @@ $(function (){
             }
         ]
     });
+
+    $('.products__name').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        vertical: true,
+        centerMode: true,
+        focusOnSelect: true,
+        asNavFor: '.products__content',
+        prevArrow: '<button type="button" class="products-prev"><img src="img/products/prev.svg" alt="arrow left"></button>',
+        nextArrow: '<button type="button" class="products-next"><img src="img/products/next.svg" alt="arrow right"></button>',
+      });
+      $('.products__content').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.products__name',
+        arrows: false,
+        fade: true
+      });
 });

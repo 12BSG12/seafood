@@ -1,0 +1,108 @@
+.products {
+    padding-top: 94px;
+    // .products__inner
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .products__name
+    &__name {
+        padding-left: 88px;
+        width: 510px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 72px;
+        margin: -15px 0;
+    }
+    // .products__name-item
+    &__name-item {
+        @extend %fontSlab;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+        padding: 15px 0;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    // .products__content
+    &__content {
+        width: 600px;
+    }
+    // .products__content-element
+    &__content-element {
+    }
+    // .products__content-box
+    &__content-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    // .products__content-img
+    &__content-img {
+    }
+    // .products__content-list
+    &__content-list {
+        padding-left: 48px;
+    }
+    // .products__content-info
+    &__content-info {
+        font-size: 16px;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        span{
+            @extend %fontSlab;
+            font-size: 16px;
+            line-height: 21px;
+            color: $blue;
+        }
+        div{
+            margin-top: 10px;
+            line-height: 19px;
+            color: $black;
+        }
+    }
+    // .products__content-title
+    &__content-title {
+        width: 100%;
+        @extend %fontSlab;
+        font-size: 24px;
+        line-height: 32px;
+        color: $blue;
+        margin-bottom: 20px;
+    }
+    // .products__content-text
+    &__content-text {
+        width: 100%;
+        font-size: 16px;
+        line-height: 120%;
+        color: $black;
+        margin-bottom: 26px;
+    }
+    // .products__btn
+    &__btn {
+        color: $blue;
+        border: 1px solid $blue;
+        transition: all .2s ease;
+        background-color: transparent;
+        &:hover{
+            color: $white;
+            background: $blue;
+        }
+    }
+}
+.products-prev,
+.products-next{
+    position: absolute;
+    left: 60%;
+    transform: translateX(-80%);
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.products-prev{
+    top: 0;
+}
+.products-next{
+    bottom: 110px;
+}

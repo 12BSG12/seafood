@@ -173,3 +173,10 @@
         opacity: 1;
     }
 }
+.slick-current{
+    .products__name-item{
+        font-size: 36px;
+        font-weight: 700;
+        color: $blue;
+    }
+}
