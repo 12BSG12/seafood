@@ -175,7 +175,7 @@
 }
 .slick-current{
     .products__name-item{
-        font-size: 36px;
+        @include adaptiv-value(font-size, 36, 26, 1);
         font-weight: 700;
         color: $blue;
     }

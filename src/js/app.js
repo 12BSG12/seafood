@@ -53,6 +53,16 @@ $(function (){
         slidesToScroll: 1,
         asNavFor: '.products__name',
         arrows: false,
-        fade: true
+        fade: true,
+        responsive: [{
+            breakpoint: 861,
+            settings: {
+                fade: false,
+                arrows: true,
+                prevArrow: '<button type="button" class="products-prev"><img src="img/products/next.svg" alt="arrow left"></button>',
+                nextArrow: '<button type="button" class="products-next"><img src="img/products/prev.svg" alt="arrow right"></button>',
+              }
+            }
+        ]
       });
 });
