@@ -1,0 +1,99 @@
+.info {
+    padding-top: 100px;
+    @media (max-width: 640px) {
+        padding-top: 20px;
+    }
+    // .info__inner
+    &__inner {
+    }
+    // .info__item
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-bottom: 50px;
+        @media (max-width: 640px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 540px) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+    }
+    // .info__body
+    &__body {
+        max-width: 490px;
+        @media (max-width: 1030px) {
+            padding-right: 15px;
+        }
+        @media (max-width: 540px) {
+            padding: 0;
+            margin-bottom: 10px;
+        }
+    }
+    &__body--sm {
+        @media (max-width: 1030px) {
+            padding-right: 0;
+            padding-left: 15px;
+        }
+        @media (max-width: 540px) {
+            order: 1;
+        }
+        @media (max-width: 540px) {
+            padding: 0;
+        }
+    }
+    // .info__item-title
+    &__item-title,
+    &__item-subtitle {
+        @extend %fontSlab;
+        font-size: 24px;
+        line-height: 120%;
+        color: $blue;
+        margin-bottom: 30px;
+        @media (max-width: 640px) {
+            margin-bottom: 15px;
+        }
+    }
+    &__item-subtitle{
+        margin-top: 50px;
+        @media (max-width: 640px) {
+            margin-top: 15px;
+        }
+    }
+    // .info__item-text
+    &__item-text {
+        max-width: 420px;
+        font-size: 16px;
+        line-height: 120%;
+        color: $black;
+        p{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @media (max-width: 640px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    // .info__item-img
+    &__item-img {
+        width: 100%;
+        padding-bottom: 42%;
+    }
+    // .info__item-img--sm
+    &__item-img--sm {
+        width: 70%;
+        padding-bottom: 17%;
+        @media (max-width: 990px) {
+            width: 97%;
+        }
+        @media (max-width: 540px) {
+            order: 2;
+            width: 100%;
+            padding-bottom: 41%;
+        }
+    }
+}
